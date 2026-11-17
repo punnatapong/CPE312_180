@@ -24,7 +24,7 @@ docker build -t ds-ml-service .
 
 ### 2. Run Container
 ```bash
-docker run --rm -p 5001:5000 ds-ml-service
+docker run --rm -p 5000:5000 ds-ml-service
 ```
 ---
 
