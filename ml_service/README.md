@@ -31,14 +31,14 @@ docker run --rm -p 5001:5000 ds-ml-service
 ## การทดสอบใช้งาน
 
 ### 1. ใช้งานผ่านหน้าเว็บ
-เปิดเบราว์เซอร์และเข้าไปที่ `http://127.0.0.1:5001`
-ตรวจสอบสถานะ `http://127.0.0.1:5001/health`
+เปิดเบราว์เซอร์และเข้าไปที่ `http://127.0.0.1:5000`
+ตรวจสอบสถานะ `http://127.0.0.1:5000/health`
 
 ### 2. ทดสอบยิง API Endpoint
 
 **สำหรับ Windows (PowerShell):**
 ```powershell
-Invoke-WebRequest -Uri "[http://127.0.0.1:5001/predict](http://127.0.0.1:5001/predict)" `
+Invoke-WebRequest -Uri "[http://127.0.0.1:5000/predict](http://127.0.0.1:5000/predict)" `
   -Method POST `
   -Body '{"features":[8.3,25.0,6.0,1.0,1200,3.0,34.2,-118.3]}' `
   -ContentType "application/json"
